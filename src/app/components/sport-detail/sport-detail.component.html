@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="side-container" [ngStyle]="{'background-color': sport.color1}">
+    <div class="mainText">
+      <h1 class="white">{{sport.title}}</h1>
+    </div>
+    <div class="mainImage" [ngStyle]="{'background-image': 'url(' + '/assets/menuImages/' + sport.ImageLink + ')'}"></div>
+  </div>
+  <div class="mainContent">
+    <div class="top">
+      <div class="left">
+        <h2 class="center-text">Discover {{sport.title}}</h2>
+        <p>{{ sport.description }}</p>
+      </div>
+      <div class="right" [ngStyle]="{'background-image': 'url(' + '/assets/detailImages/' + sport.ImageLink + ')'}">
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bottom-wrapper">
+        <iframe class="video" [src]="'https://www.youtube.com/embed/' + sport.videoLink | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>

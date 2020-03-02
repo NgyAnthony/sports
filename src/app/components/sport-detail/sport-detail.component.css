@@ -1,0 +1,95 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.side-container{
+  width: 35%;
+  height: 100%;
+  background-color: darkred;
+  padding: 0 1.24em;
+}
+
+.white{
+  margin: 0;
+  color: white;
+}
+
+.medium-weight{
+  font-weight: 400;
+}
+
+.mat-divider {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  margin-top: 1em;
+  border-top-color: white;
+  margin-bottom: 1em;
+}
+
+.mainText{
+  height: 15%;
+}
+
+.mainImage{
+  border-radius: 25px;
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.mainContent{
+  width: 65%;
+  height: 100%;
+  padding: 2em 2em 2em 2em;
+}
+
+.left{
+  width: 40%;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.right{
+  margin-left: 2em;
+  background-color: blue;
+  border-radius: 25px;
+  width: 50%;
+  max-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.top{
+  display: flex;
+  height: 30%;
+}
+
+.bottom{
+  height: 70%;
+}
+
+.bottom-wrapper{
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.video{
+  width: 75%;
+  height: 75%;
+}

@@ -1,0 +1,33 @@
+<div *ngFor="let sport of sports; let i = index">
+  <div class="bg__img" [ngStyle]="{'background-image': 'url(' + '/assets/menuImages/' + sport.ImageLink + ')'}" *ngIf="i === currentSport">
+    <div class="bg__gradient" [ngStyle]="{'background': 'linear-gradient(90deg,' + sport.color1 + ',' + sport.color2 + ')'}" >
+      <div class="container">
+        <div class="title">
+          <h1 routerLink="/">Visusport.</h1>
+        </div>
+        <div class="content">
+          <div class="content__title">
+            <h1 class="sport__title">{{ sport.title }}</h1>
+          </div>
+          <div class="content__description">
+            <p class="sport__description">{{ sport.description | wordwrap:4 }}</p>
+          </div>
+          <div class="content__link">
+            <a routerLink="/sport/{{ sport.id }}" class="sport__button">More detail</a>
+          </div>
+        </div>
+        <div class="action__buttons">
+          <div class="action__button__previous">
+            <button (click)="onPreviousClick()" class="action__button"><i class="fas fa-arrow-left"></i> Previous</button>
+          </div>
+          <div class="action__button_footer">
+            <span class="footer-title">Copyright © 2020 VISUSPORT.</span>
+          </div>
+          <div class="action__button__next">
+            <button (click)="onNextClick()" class="action__button">Next <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
