@@ -5,15 +5,17 @@
         <div class="title">
           <h1 routerLink="/">Visusport.</h1>
         </div>
-        <div class="content">
-          <div class="content__title">
-            <h1 class="sport__title">{{ sport.title }}</h1>
-          </div>
-          <div class="content__description">
-            <p class="sport__description">{{ sport.description | wordwrap:4 }}</p>
-          </div>
-          <div class="content__link">
-            <a routerLink="/sport/{{ sport.id }}" class="sport__button">More detail</a>
+        <div class="wrapper">
+          <div class="content">
+            <div class="content__title">
+              <h1 class="sport__title">{{ sport.title }}</h1>
+            </div>
+            <div class="content__description">
+              <p class="sport__description">{{ sport.description | wordwrap:4 }}</p>
+            </div>
+            <div class="content__link">
+              <a routerLink="/sport/{{ sport.id }}" class="sport__button">More detail</a>
+            </div>
           </div>
         </div>
         <div class="action__buttons">
